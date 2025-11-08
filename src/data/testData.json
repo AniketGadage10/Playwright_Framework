@@ -1,0 +1,18 @@
+{
+    "testUser": {
+        "username": "testuser@example.com",
+        "password": "TestPass123!"
+    },
+    "testProducts": [
+        {
+            "id": "1",
+            "name": "Test Product 1",
+            "price": 99.99
+        },
+        {
+            "id": "2",
+            "name": "Test Product 2",
+            "price": 149.99
+        }
+    ]
+}
