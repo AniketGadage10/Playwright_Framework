@@ -1,5 +1,5 @@
 export const testConfig = {
-    baseUrl: 'https://playwright.dev/',    // Base URL for tests
+    baseUrl: 'https://www.saucedemo.com/',    // Base URL for tests
     timeout: 30000,                                 // Global timeout in milliseconds
     retries: 2,                                    // Number of test retries on failure
     browserOptions: {

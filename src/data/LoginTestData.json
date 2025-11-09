@@ -1,0 +1,24 @@
+{
+    "loginCredentials": {
+        "standardUser": {
+            "username": "standard_user",
+            "password": "secret_sauce"
+        },
+        "lockedOutUser": {
+            "username": "locked_out_user",
+            "password": "secret_sauce"
+        },
+        "problemUser": {
+            "username": "problem_user",
+            "password": "secret_sauce"
+        }
+    },
+    "expectedMessages": {
+        "loginSuccess": "Swag Labs",
+        "loginError": "Epic sadface: Username and password do not match any user in this service",
+        "lockedOutError": "Epic sadface: Sorry, this user has been locked out."
+    },
+    "urls": {
+        "baseUrl": "https://www.saucedemo.com/"
+    }
+}

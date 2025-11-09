@@ -2,21 +2,21 @@ import fs from 'fs';
 import path from 'path';
 
 /**
- * Test Data Manager class for handling test data
+ * Simple Test Data Manager for reading/writing JSON files under src/data
  */
 export class TestDataManager {
-    private static dataDir = path.join(__dirname, '../../src/data');
+    // Resolve relative to project root to avoid __dirname path confusion
+    private static dataDir = path.resolve(process.cwd(), 'src', 'data');
 
     /**
      * Load JSON test data from a file
      * @param filename - Name of the JSON file (without extension)
-     * @returns Promise<any>
      */
-    static async loadTestData<T>(filename: string): Promise<T> {
+    static async loadTestData(filename: string): Promise<any> {
         const filePath = path.join(this.dataDir, `${filename}.json`);
         try {
             const data = await fs.promises.readFile(filePath, 'utf8');
-            return JSON.parse(data) as T;
+            return JSON.parse(data);
         } catch (error) {
             throw new Error(`Error loading test data from ${filePath}: ${error}`);
         }

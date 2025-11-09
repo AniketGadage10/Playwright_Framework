@@ -1,0 +1,9 @@
+[2025-11-09T09:27:14.774Z] [INFO] Log started for test: should show error message for locked out user
+[2025-11-09T09:27:14.777Z] [INFO] Initializing LoginPage
+[2025-11-09T09:27:16.508Z] [INFO] Navigated to login page
+[2025-11-09T09:27:16.508Z] [INFO] Navigated to login page before test
+[2025-11-09T09:27:16.510Z] [INFO] Attempting to login with username: locked_out_user
+[2025-11-09T09:27:17.231Z] [INFO] Login attempt completed
+[2025-11-09T09:27:17.314Z] [ERROR] Login error: Epic sadface: Sorry, this user has been locked out.
+[2025-11-09T09:27:17.327Z] [INFO] Successfully verified locked out user message
+[2025-11-09T09:27:17.333Z] [INFO] Log closed
